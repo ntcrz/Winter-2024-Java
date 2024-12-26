@@ -38,8 +38,8 @@ public class Homework2 {
         System.out.println("does countryName2 contains 'R' -> " + isContains_R);
         boolean isStartsWith_ki= countryName2LowerCase.startsWith("ki");
         System.out.println("does countryName2 starts with 'Ki' -> " + isStartsWith_ki);
-        boolean isCountryName2EqualsIgnoreCase_countryName2 =  countryName2.equalsIgnoreCase(countryName2LowerCase);
-        System.out.println("countryName2 and countryName1 are having same value -> " + isCountryName2EqualsIgnoreCase_countryName2);
+        boolean isCountryName2EqualsIgnoreCase_countryName1 =  countryName2LowerCase.equalsIgnoreCase(countryName1);
+        System.out.println("countryName2 and countryName1 are having same value -> " + isCountryName2EqualsIgnoreCase_countryName1);
         String replace_D_SiGMa = countryName2.replace("D", "SiGMa");
         System.out.println("countryName2 after replace 'D' with 'SigMa' -> " + replace_D_SiGMa);
     }
