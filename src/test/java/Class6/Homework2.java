@@ -19,7 +19,7 @@ public class Homework2 {
         int countryName1Length = countryName1.length();
         System.out.println("\nIf country name length is greater or equal to 6 result1 is 6 otherwise it's 20");
         System.out.println("Country name is: " +countryName1);
-        result1 = countryName1Length >= 6 ? 6 : 20;
+        result1 = countryName1Length >= 6 ? 10 : 20;
         System.out.println("The value of result1 is: " +result1);
 
         String countryName2 = "UNiTeD KInGDom OF GReAt BRiTaIn And NorTHerN irElaND";
@@ -40,7 +40,11 @@ public class Homework2 {
         System.out.println("does countryName2 starts with 'Ki' -> " + isStartsWith_ki);
         boolean isCountryName2EqualsIgnoreCase_countryName1 =  countryName2LowerCase.equalsIgnoreCase(countryName1);
         System.out.println("countryName2 and countryName1 are having same value -> " + isCountryName2EqualsIgnoreCase_countryName1);
+        //Not sure how to do #4 and ignore cases. Please advise on the correct solution
         String replace_D_SiGMa = countryName2.replace("D", "SiGMa");
         System.out.println("countryName2 after replace 'D' with 'SigMa' -> " + replace_D_SiGMa);
+        String replace2_D_SiGMa = countryName2LowerCase.replace("d", "SiGMa");
+        System.out.println("countryName2 after replace 'D' with 'SigMa' -> " + replace2_D_SiGMa);
+
     }
 }
