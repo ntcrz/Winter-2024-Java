@@ -31,20 +31,25 @@ public class Homework2 {
          * 3. find if countryName2 and countryName1 are having same value
          * 4. replace "D" in countryName2 with "SiGMa"
          */
+        // 1. find if countryName2 contains R
         String countryName2LowerCase = countryName2.toLowerCase();
         System.out.println("\ncountryName2 -> " + countryName2);
         System.out.println("countryName1 -> " + countryName1);
         boolean isContains_R= countryName2LowerCase.contains("r");
         System.out.println("does countryName2 contains 'R' -> " + isContains_R);
+
+        // 2. find if countryName2 starts with Ki
         boolean isStartsWith_ki= countryName2LowerCase.startsWith("ki");
         System.out.println("does countryName2 starts with 'Ki' -> " + isStartsWith_ki);
+
+        // 3. find if countryName2 and countryName1 are having same value
         boolean isCountryName2EqualsIgnoreCase_countryName1 =  countryName2LowerCase.equalsIgnoreCase(countryName1);
         System.out.println("countryName2 and countryName1 are having same value -> " + isCountryName2EqualsIgnoreCase_countryName1);
-        //Not sure how to do #4 and ignore cases. Please advise on the correct solution
+
+        // 4. replace "D" in countryName2 with "SiGMa"
         String replace_D_SiGMa = countryName2.replace("D", "SiGMa");
-        System.out.println("countryName2 after replace 'D' with 'SigMa' -> " + replace_D_SiGMa);
-        String replace2_D_SiGMa = countryName2LowerCase.replace("d", "SiGMa");
-        System.out.println("countryName2 after replace 'D' with 'SigMa' -> " + replace2_D_SiGMa);
+        String replace2_d_SiGMa = replace_D_SiGMa.replace("d", "SiGMa");
+        System.out.println("countryName2 after replace 'D' with 'SigMa' -> " + replace2_d_SiGMa);
 
     }
 }
