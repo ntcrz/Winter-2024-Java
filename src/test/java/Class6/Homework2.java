@@ -17,12 +17,13 @@ public class Homework2 {
          */
 
         int countryName1Length = countryName1.length();
-        System.out.println("\nIf country name length is greater or equal to 6 result1 is 6 otherwise it's 20");
+        System.out.println("\nIf country name length is greater or equal to 6 result1 is 10 otherwise it's 20");
         System.out.println("Country name is: " +countryName1);
         result1 = countryName1Length >= 6 ? 10 : 20;
         System.out.println("The value of result1 is: " +result1);
 
         String countryName2 = "UNiTeD KInGDom OF GReAt BRiTaIn And NorTHerN irElaND";
+
         /**
          * Ignore-cases for all below tasks
          *
@@ -34,7 +35,7 @@ public class Homework2 {
         // 1. find if countryName2 contains R
         String countryName2LowerCase = countryName2.toLowerCase();
         System.out.println("\ncountryName2 -> " + countryName2);
-        System.out.println("countryName1 -> " + countryName1);
+        //System.out.println("countryName1 -> " + countryName1);
         boolean isContains_R= countryName2LowerCase.contains("r");
         System.out.println("does countryName2 contains 'R' -> " + isContains_R);
 
