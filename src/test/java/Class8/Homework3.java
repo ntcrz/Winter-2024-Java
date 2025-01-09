@@ -1,5 +1,7 @@
 package Class8;
 
+import java.util.Arrays;
+
 public class Homework3 {
     public static void main(String[] args) {
 
@@ -13,6 +15,17 @@ public class Homework3 {
          *      otherwise, print the name in uppercase
          *
          */
+     String[] petsArray = new String[5];
+     petsArray[0] = "Cat";
+     petsArray[1] = "Turtle";
+     petsArray[2] = "Dog";
+     petsArray[3] = "Hamster";
+     petsArray[4] = "Parrot";
+     System.out.println("\nList of common pets: "+ Arrays.toString(petsArray));
+     int petsArrayLength = petsArray.length;
+     System.out.println(petsArrayLength);
+
+
 
         /**
          * Question-2:
