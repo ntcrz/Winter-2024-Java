@@ -24,6 +24,28 @@ public class Homework4 {
          * (studentScore/maxScore)*100
          */
 
+        double studentScore = 95;
+        int maxScore = 100;
+        double percentageScore = (studentScore / maxScore) * 100;
+
+        System.out.println("\nStudent Grade based on percentage");
+        if (percentageScore >= 91 && percentageScore <= 100) {
+            System.out.println("Student Percentage is: " +percentageScore + " Grade is A");
+        } else if (percentageScore >= 81 && percentageScore <= 90.99) {
+            System.out.println("Student Percentage is: " +percentageScore+ " Grade is B");
+        } else if (percentageScore >= 71 && percentageScore <= 80.99) {
+            System.out.println("Student Percentage is: " +percentageScore+ " Grade is C");
+        } else if (percentageScore >= 61 && percentageScore <= 70.99) {
+            System.out.println("Student Percentage is: " +percentageScore+ " Grade is D");
+        } else if (percentageScore >= 51 && percentageScore <= 60.00) {
+            System.out.println("Student Percentage is: " +percentageScore+ " Grade is E");
+        } else if (percentageScore <= 51) {
+            System.out.println("Student Percentage is: "+percentageScore+ " Grade is F");
+        } else {
+            System.out.println("Invalid student score entered " + studentScore);
+        }
+
+
         /**
          * Question-2:
          * Create a variable (myNumber) and store any value in it.
@@ -34,6 +56,16 @@ public class Homework4 {
          *
          * int myNumber = 15;
          */
-
+        System.out.println("\nBased on value of myNumber, print a statement");
+        int myNumber = 60;
+        if (myNumber%3 ==0 && myNumber%5 ==0) {
+            System.out.println("divisible by 5 and 3");
+        } else if (myNumber%5 ==0 ) {
+            System.out.println("divisible by 5");
+        } else if (myNumber%3 ==0 ) {
+            System.out.println("divisible by 3");
+        } else {
+            System.out.println("myNumber: "+myNumber+ " is not divisible by 5 or 3 " );
+        }
     }
 }
