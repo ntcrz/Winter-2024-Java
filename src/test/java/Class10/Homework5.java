@@ -35,6 +35,7 @@ public class Homework5 {
         // code
         // there should NOT be any sout-statement in the for-loop
 
+
         String givenString = "Have a great day";
         String resultString = ""; // to store the result
         String givenStringArray[] = givenString.split(" ");
