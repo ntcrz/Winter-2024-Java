@@ -1,15 +1,6 @@
-package Misc;
+package Class13.ClassConceptPkg2_Practical;
 
-public class Method_Example_1 {
-
-    public static void main(String[] args) {
-        helloWorld();
-        System.out.println("\nAfter helloWorld()\n");
-
-        String result = titleCaseConverter("GoOD MoRNiNG");
-        System.out.println("result -> " + result);
-    }
-
+public class MyMethods_String {
     public static String titleCaseConverter(String userInput) {
         String sentenceResult = "";
         String[] sentenceSplit = userInput.toLowerCase().split(" ");
@@ -21,8 +12,12 @@ public class Method_Example_1 {
         }
         return sentenceResult;
     }
-
-    public static void helloWorld() {
-        System.out.println("Hello World");
+    public String reverseStringByWord(String userInput) {
+        String sentenceResult = "";
+        String[] sentenceSplit = userInput.toLowerCase().split(" ");
+        for (int i= sentenceSplit.length-1 ; i >=0 ; i--) {
+            sentenceResult = sentenceSplit[i] + " ";
+        }
+        return sentenceResult.trim();
     }
 }
