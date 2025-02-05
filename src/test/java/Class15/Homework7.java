@@ -63,12 +63,40 @@ public class Homework7 {
          * else
          *      store -1 in a variable, and then print it.
          */
+        String target = "JOHN";
+        int occurrence = 3;
+        int index = -1;
+        int c = 0;
 
+        for (int i = 0; i < student2027List.size(); i++) {
+            if (student2027List.get(i).equalsIgnoreCase(target)) {
+                c++;
+                if (c == occurrence) {
+                    index = i;
+                    break;
+                }
+            }
+        }
+
+        if (index != -1) {
+            System.out.println("Index of the third occurrence of \"" + target + "\": " + index);
+        } else {
+            System.out.println("The third occurrence of \"" + target + "\" was not found. " +index);
+        }
 
         /**
          * Q2: Find the number of students who has name starts with "g"(ignore cases) in student2027List
          */
+        System.out.println("\nFind the number of students who has a name that starts with 'K' (ignore cases) in student2027List");
+        int counter=0;
 
+        for (String name : student2027List) {
+            if (name.startsWith("k") || name.startsWith("K")) {
+                counter++;
+            }
+        }
+
+        System.out.println("Result : " + counter);
 
         /**
          * Q3: Find if "King" (ignore cases) is present ONLY once in student2027List
@@ -78,6 +106,24 @@ public class Homework7 {
          * else
          *      store false in variable, and then print it
          */
+        boolean result = false;
+        int count = 0;
+        String firstName = "John";
+        System.out.println("\nCheck if " +firstName+ " (ignore cases) is present ONLY once in student2027List");
+        for (String name : student2027List) {
+            if (name.equalsIgnoreCase(firstName)) {
+                count++;
+                if (count > 1) {
+                    result = false;
+                    break;
+                } else {
+                    result = true;
+                }
+
+            }
+        }
+
+        System.out.println("does student20027-ArrayList contain "+firstName+ " only once (ignore cases) -> " + result +count );
 
         /**
          * Q4: Find the total of bills-ArrayList
@@ -98,6 +144,13 @@ public class Homework7 {
         bills.add(12.34);
         bills.add(98.45);
         bills.add(98.65);
+
+        double billSum= 0;
+        for (int i=0; i<= bills.size()-1; i++) {
+            billSum += bills.get(i);
+        }
+
+        System.out.println("\nSum of bills array is: " +billSum);
 
 
 
